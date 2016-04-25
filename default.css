@@ -1,0 +1,244 @@
+/* Holy Grail responsive basic template */
+/** {border: 1px dashed black}*/
+/*aside {background-color: purple;}*/
+/*section {background-color: green;}*/
+/*nav {background-color: grey;}*/
+/*header, footer {background-color: lightblue;}*/
+/*.row {background: purple;}*/
+/*footer {background: grey}*/
+
+header, footer, nav, section, aside, body, div, li, a {
+  font-family: arial, sans-serif;
+  text-decoration: none;
+}
+header, footer {
+  height: 50px;
+}
+header li {
+  padding-right: 20px;
+  display: inline;
+}
+header a {
+  font: 18px Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav {
+  flex-grow: 1;
+  height: 20em;
+}
+section {
+  flex-grow: 2;
+  /*height: 20em;*/
+}
+aside {
+  flex-grow: 1;
+  height: 20em;
+}
+
+img[src="my_pic.jpg"] {
+  width: 300px;
+}
+img[src="repl_game.png"] {
+  width: 500px;
+}
+img[src="voter_sim.png"] {
+  width: 500px;
+}
+img[src="icons/linkedin.png"] {
+  width: 40px;
+}
+img[src="icons/octocat.png"] {
+  width: 40px;
+}
+img[src="icons/wordpress.png"] {
+  width: 40px;
+}
+/*.two_uneven, .two_even {
+  display: flex;
+}
+.two_uneven div:first-of-type {
+  margin-left: 80px;
+  flex-grow: 1;
+  background: grey;
+}
+.two_uneven div:nth-of-type(2) {
+  margin-right: 80px;
+  flex-grow: 2;
+  background: white;
+}*/
+.sticky {
+  background: #e5e5e5;
+  top: 0;
+  position:fixed;
+  width: 100%;
+  max-height: 100px;
+}
+.sticky a {
+  text-decoration: none;
+  color: black;
+}
+.sticky a:hover {
+  border-bottom: 3px solid black;
+}
+.blank_row {
+	min-height: 50px;
+	max-height: 50px;
+}
+.three_middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#left_profile, #right_profile {
+  border-radius: 15px;
+  padding: 1em;
+  background: #e5e5e5;
+  width: 18em;
+}
+#center_profile img {
+  border-radius: 15px;
+}
+.divider {
+  border: 1px solid grey;
+  margin: 2em 10em;
+}
+.row {
+  display: flex;
+  margin: 0 10em;
+}
+[class*="col-"] {
+  margin-bottom: 5px;
+  min-height: 30px;
+  background: #fff;
+  padding: 12px;
+  line-height: 120%;
+}
+div.underline {
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
+}
+/*[class*="col-"] {margin-right: 20px;}*/
+ [class*="col-"]:last-child {margin-right: 0;}
+.col-1 {flex: 1;}
+.col-2 {flex: 2;}
+.col-3 {flex: 3;}
+.col-4 {flex: 4;}
+.col-5 {flex: 5;}
+.col-6 {flex: 6;}
+.col-7 {flex: 7;}
+.col-8 {flex: 8;}
+.col-9 {flex: 9;}
+.col-10 {flex: 10;}
+.col-11 {flex: 11;}
+.col-12 {flex: 12;}
+/* ------------------------------- */
+/*            Profile              */
+/* ------------------------------- */
+#profile_banner {
+  padding: 30px 0;
+  /*background-color: grey;*/
+  color: white;
+  background-image: url("keyboard-1024x267.png");
+}
+#profile h1, #profile h2, #profile p {
+  text-align: center;
+}
+#profile div:nth-of-type(2) {
+  margin: 0 20px;
+}
+/* ------------------------------- */
+/*           Experience            */
+/* ------------------------------- */
+#experience {
+  /*width 100vw;*/
+}
+#experience h2 {
+  text-align: center;
+}
+
+/* ------------------------------- */
+/*            Projects             */
+/* ------------------------------- */
+#projects {
+  /*width 100vw;*/
+}
+#projects h2 {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+div.three_unequal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*height: 20vh;*/
+}
+
+.quote {
+  width: 35em;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-style: italic;
+  font-size: 110%;
+}
+.quote span {
+  margin: 0px;
+  line-height: 250%;
+}
+.quote::before {
+  content: "\201C"; /* Hex code for &ldquo */
+  font-size: 300%;
+  font-family: Georgia;
+  /*line-height: 90%;*/
+}
+.quote::after {
+  content: "\201D"; /* Hex code for &rdquo */
+  font-size: 300%;
+  font-family: Georgia;
+  /*line-height: 90%;*/
+}
+footer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 80%;
+}
+footer img {
+  margin-left: 20px;
+  vertical-align: middle;
+}
+#copyright {
+  margin-top: 10px;
+}
+/* Small devices */
+@media only screen and (max-width: 480px) {
+  header, footer {
+    height: 200px;
+  }
+  header, footer, div, body, section, aside {
+    font-size: 60px;
+  }
+  div.three_unequal{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Lanrger devices and iPads */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+  header, footer {
+    height: 200px;
+  }
+  header, footer, div, body, section, aside {
+    font-size: 30px;
+  }
+  div.three_unequal{
+    display: flex;
+    flex-direction: column;
+  }
+}
