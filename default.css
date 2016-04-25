@@ -174,7 +174,6 @@ div.three_unequal {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /*height: 20vh;*/
 }
 
 .quote {
@@ -223,10 +222,6 @@ footer img {
   header, footer, div, body, section, aside {
     font-size: 60px;
   }
-  div.three_unequal{
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* Lanrger devices and iPads */
@@ -237,8 +232,49 @@ footer img {
   header, footer, div, body, section, aside {
     font-size: 30px;
   }
+  .three_middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   div.three_unequal{
     display: flex;
     flex-direction: column;
+  }
+  #left_profile, #right_profile {
+    border-radius: 15px;
+    padding: 1em;
+    background: #e5e5e5;
+    width: 16em;
+    margin: 1em;
+  }
+  img[src="my_pic.jpg"] {
+    margin-left: 1em;
+    width: 16em;
+  }
+  img[src="repl_game.png"] {
+    width: 300px;
+  }
+  img[src="voter_sim.png"] {
+    width: 300px;
+  }
+  .quote {
+    width: 15em;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 110%;
+  }
+  .row {
+    display: flex;
+    margin: 0 1em;
+  }
+  footer div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 40%;
   }
 }
