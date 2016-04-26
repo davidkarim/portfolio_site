@@ -221,10 +221,15 @@ footer img {
   header, footer, div, body, section, aside {
     font-size: 30px;
   }
+  header a {
+    font: 38px Helvetica;
+    font-weight: bold;
+    text-decoration: none;
+  }
   .three_middle {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   div.three_unequal{
     display: flex;
@@ -238,14 +243,26 @@ footer img {
     margin: 1em;
   }
   img[src="my_pic.jpg"] {
-    margin-left: 1em;
-    width: 16em;
+    margin-left: 5px;
+    width: 17em;
   }
   img[src="repl_game.png"] {
     width: 300px;
   }
   img[src="voter_sim.png"] {
     width: 300px;
+  }
+  img[src="icons/linkedin.png"] {
+    width: 80px;
+  }
+  img[src="icons/octocat.png"] {
+    width: 80px;
+  }
+  img[src="icons/twitter.jpg"] {
+    width: 80px;
+  }
+  img[src="icons/wordpress.png"] {
+    width: 80px;
   }
   .quote {
     width: 15em;
@@ -265,5 +282,13 @@ footer img {
     flex-direction: row;
     justify-content: space-between;
     font-size: 40%;
+  }
+  footer img {
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+  #copyright {
+    margin-top: 20px;
+    font-size: 110%;
   }
 }
