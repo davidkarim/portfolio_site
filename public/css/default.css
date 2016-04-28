@@ -127,7 +127,7 @@ div.underline {
   padding: 30px 0;
   /*background-color: grey;*/
   color: white;
-  background-image: url("keyboard-1024x267.png");
+  background-image: url("../keyboard-1024x267.png");
 }
 #profile h1, #profile h2, #profile p {
   text-align: center;
