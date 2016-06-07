@@ -65,6 +65,7 @@ img[src="icons/wordpress.png"] {
   position:fixed;
   width: 100%;
   max-height: 100px;
+  z-index: 20;
 }
 .sticky a {
   text-decoration: none;
@@ -131,6 +132,7 @@ div.underline {
   /*background-color: grey;*/
   color: white;
   background-image: url("../keyboard-1024x267.png");
+  text-align: center;
 }
 #profile h1, #profile h2, #profile p {
   text-align: center;
@@ -158,6 +160,10 @@ div.underline {
   text-align: center;
 }
 
+/* Position cards in the middle */
+.cards {
+  margin: 0 auto;
+}
 body {
   display: flex;
   flex-direction: column;
