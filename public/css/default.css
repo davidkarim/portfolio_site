@@ -179,6 +179,10 @@ div.underline {
 .cards {
   margin: 0 auto;
 }
+.card {
+  width: 80%;
+  margin: 15px auto !important;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -254,6 +258,9 @@ footer img {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card {
+    width: 100%;
   }
   div.three_unequal{
     display: flex;
